@@ -7,20 +7,20 @@
 </head>
 <body>
 	<form action="#" id="res">
-		<input type="text" required placeholder="Nom"><br />
-		<input type="text" required placeholder="Prénom"><br />
-		<input type="text" required placeholder="Pseudo"><br />
+		<input type="text" required placeholder="Nom" autocomplete="on"><br />
+		<input type="text" required placeholder="Prénom" autocomplete="on"><br />
+		<input type="text" required placeholder="Pseudo" autocomplete="on"><br />
 		<input type="password" id="mdp" required placeholder="Mot de passe"><p id="necessaire">Votre mot de passe doit contenir au moins huit caractères dont au moins une majuscule, un caractère spécial et un chiffre !</p> <br />
 		<input type="radio" id="homme" required name="sexe">
 		<label for="homme">Homme</label>
 		<input type="radio" id="femme" name="sexe">
 		<label for="femme">Femme</label><br />
 		<input type="text" required value="JJ/MM/AAAA"><br />
-		<input type="text" required placeholder="Ville"><br />
-		<input type="text" required placeholder="E-mail"><br />
-		<input type="text" placeholder="URL de votre site"><br /><!-- Obliger l'utlisateur a avoir un site ? -->
-		<input type="textarea" required maxlength="200" placeholder="Vos hobbies"><br />
-		<input type="text" required placeholder="XX.XX.XX.XX.XX"><br />
+		<input type="text" required placeholder="Ville" autocomplete="on"><br />
+		<input type="text" required placeholder="E-mail" autocomplete="on"><br />
+		<input type="text" placeholder="URL de votre site" autocomplete="on"><br /><!-- Obliger l'utlisateur a avoir un site ? -->
+		<input type="textarea" required maxlength="200" placeholder="Vos hobbies" autocomplete="on"><br />
+		<input type="text" required placeholder="XX.XX.XX.XX.XX" autocomplete="on"><br />
 		<input type="submit" value="Valider">
 	</form>
 	<script src="script.js"></script>
