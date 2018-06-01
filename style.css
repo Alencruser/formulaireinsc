@@ -1,6 +1,18 @@
 form {
-	text-align: center
+	text-align: center;
+}
+p.dis {
+	display:none;
+}
+input {
+	margin-top:10px;
 }
 #necessaire {
+	display:none;
+}
+#born {
+	display:none;
+}
+#phone {
 	display:none;
 }
