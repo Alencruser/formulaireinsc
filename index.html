@@ -10,19 +10,24 @@
 		<input type="text" required placeholder="Nom" autocomplete="on"><br />
 		<input type="text" required placeholder="Prénom" autocomplete="on"><br />
 		<input type="text" required placeholder="Pseudo" autocomplete="on"><br />
-		<input type="password" id="mdp" required placeholder="Mot de passe"><p id="necessaire">Votre mot de passe doit contenir au moins huit caractères dont au moins une majuscule, un caractère spécial et un chiffre !</p> <br />
+		<input type="password" id="mdp" required placeholder="Mot de passe" class="disp" data="necessaire"><p class="dis" id="necessaire">Votre mot de passe doit contenir au moins huit caractères dont au moins une majuscule, un caractère spécial et un chiffre !</p> <br />
+		<input type="password" placeholder="Confirmer mot de passe"><br />
 		<input type="radio" id="homme" required name="sexe">
 		<label for="homme">Homme</label>
 		<input type="radio" id="femme" name="sexe">
 		<label for="femme">Femme</label><br />
-		<input type="text" required value="JJ/MM/AAAA"><br />
+		<input type="text" id='date' required placeholder="JJ/MM/AAAA" class='disp' data="born"><p class="dis" id="born">La date de naissance doit conserver le format JJ/MM/AAAA</p><br />
 		<input type="text" required placeholder="Ville" autocomplete="on"><br />
 		<input type="text" required placeholder="E-mail" autocomplete="on"><br />
 		<input type="text" placeholder="URL de votre site" autocomplete="on"><br /><!-- Obliger l'utlisateur a avoir un site ? -->
 		<input type="textarea" required maxlength="200" placeholder="Vos hobbies" autocomplete="on"><br />
-		<input type="text" required placeholder="XX.XX.XX.XX.XX" autocomplete="on"><br />
+		<input type="text" id="tel" required placeholder="XX.XX.XX.XX.XX" autocomplete="on" pattern="[0-9]+" class="disp" data="phone"><p class="dis" id="phone">Ne doit contenir que des chiffres sous le format XX.XX.XX.XX.XX</p><br />
 		<input type="submit" value="Valider">
 	</form>
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
 	<script src="script.js"></script>
 </body>
 </html>
