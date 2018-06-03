@@ -12,10 +12,10 @@ function stocker(){
 			console.log("test")
 			var store={"Firstname:": $('#firstname').val(),"lastname":$('#lastname').val(),"Pseudo":$('#pseudo').val(),"password":$('#pass').val(),"Sexe":lab,"Birthdate":$('#date').val(),"city":$('#city').val(),"mail":$('#email').val(),"website":$('#site').val(),"Hobby":$('#hobbies').val(),"phone":$('#tel').val(),"color":$('#color').val()};
 			localStorage.setItem($('#pseudo').val(),JSON.stringify(store))
-		}
+		
 	} else {
-		alert('Formulaire incomplet/Des formats n\'ont pas été respectés')
-	}
+		alert('Pseudo déjà utilisé !')
+	}}
 
 function recuperer(){
 	var stocked=localStorage.getItem('Simon')
